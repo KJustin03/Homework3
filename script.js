@@ -25,6 +25,7 @@ function generatePassword() {
   }
   if (passwordLength < 8 || passwordLength > 128) {
       alert ("Password length should be at least more than 8 and less than 128.")
+      return;
   } else if (passwordLength >= 8 && passwordLength <= 128) {
       lowerCheck = confirm("Would you like to add a lowercase letter to your password?");
       upperCheck = confirm("Would you like to add an Uppercase letter to your password?");
